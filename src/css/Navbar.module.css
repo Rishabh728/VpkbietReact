@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-size: large;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+nav div{
+    /* border: solid red; */
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.navlink{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 900;
+}
+nav div:hover .navlink{
+    color: black;
+}
+
+nav div:hover{
+    /* border: solid red;  */
+    background-color: aliceblue;
+}
