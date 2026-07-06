@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Style from "../css/Navbar.module.css"
 
-const Navbar = () => {
+const Navbar = ({userName}) => {
+
+  
   return (
     
     <>
@@ -25,7 +27,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <NavLink to="/login" className={Style.navlink}>Login</NavLink>
+          <NavLink to="/login" className={userName?Style.loginUser:Style.navlink}>{userName?userName:"Login" }</NavLink>
         </div>
 
 

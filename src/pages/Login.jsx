@@ -3,7 +3,7 @@ import Registration from '../components/Registration'
 import LoginComp from '../components/LoginComp'
 import Style from '../css/Login.module.css'
 
-const Login = () => {
+const Login = ({s}) => {
 
   let [choose, setChoose] = useState(false);
 
@@ -19,7 +19,7 @@ const Login = () => {
           <button onClick={handleButton}>Login</button>
         </div>
         <div className={Style.formBox}>
-          {choose?<LoginComp/> : <Registration/>}
+          {choose ? <LoginComp s={s} /> : <Registration/>}
       </div>
         
         

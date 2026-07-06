@@ -2,7 +2,8 @@ import React, { useRef, useState } from "react";
 import Style from "../css/loginComp.module.css";
 import { toast } from "react-toastify";
 
-const LoginComp = () => {
+const LoginComp = (props) => {
+  console.log(props.s)
     let unameRef = useRef();
     let passRef = useRef();
 
@@ -20,7 +21,6 @@ const LoginComp = () => {
       //       }
       // )
       
-
       let username = unameRef.current.value
       let password = passRef.current.value
 
@@ -29,6 +29,7 @@ const LoginComp = () => {
 
       if (verifyData.userName == username && verifyData.password == password) {
         toast.success("Login sucessfully")
+        props.s(verifyData.name)
       }
       else {
         toast.error("incorrect username or password")
