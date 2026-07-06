@@ -1,0 +1,33 @@
+.sectionLogin{
+    /* border: solid red; */
+    background:linear-gradient(to top , rgb(255, 255, 255) 10%, rgb(0, 0, 0));
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.headButton{
+    margin-top: 10px;
+    /* border: solid ; */
+    height: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    height: 100%;
+    width: 45%;
+    font-size: larger;
+    background-color: rgb(66, 159, 251);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+button:hover{
+        background-color: rgb(0, 128, 255);
+        color: navy;
+
+}

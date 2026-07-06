@@ -4,7 +4,9 @@ import DataApi from '../components/DataApi'
 const Products = () => {
   return (
     <>
-      <DataApi/>
+      <article style={{backgroundColor:"black"}}>
+         <DataApi/>
+     </article>
     </>
   )
 }

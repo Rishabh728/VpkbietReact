@@ -22,13 +22,13 @@ const DataApi = () => {
   return (
     <>
       
-      <main style={{ display: "flex", flexWrap:"wrap", justifyContent:"space-evenly" , alignItems:"center",rowGap:"50px", marginTop:"50px"}}>
+      <main style={{ display: "flex", flexWrap:"wrap", justifyContent:"space-evenly" , alignItems:"center",rowGap:"50px", paddingTop:"50px"}}>
       {
         finalData?.map((data, index) => {
           console.log(data)
 
           return (<>
-            <section style={{ height: "350px", width: "400px", borderRadius: "20px", border: "solid 1px", padding: "20px 25px", background:"linear-Gradient(to right, red, yellow)" }}>
+            <section style={{ height: "350px", width: "400px", borderRadius: "20px", padding: "20px 25px", background:"linear-Gradient(to top left, black , navy, black)", color:"skyblue", boxShadow:"10px 10px 10px white" }}>
               
               <h1>{data.name.slice(0,15)}</h1>
               <h2>Price: ${data.prepTimeMinutes}</h2>
