@@ -18,7 +18,9 @@ const Login = () => {
           <button onClick={handleButton}>Registration</button>
           <button onClick={handleButton}>Login</button>
         </div>
-      {choose?<LoginComp/> : <Registration/>}
+        <div className={Style.formBox}>
+          {choose?<LoginComp/> : <Registration/>}
+      </div>
         
         
       </section>

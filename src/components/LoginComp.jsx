@@ -1,25 +1,43 @@
 import React, { useRef, useState } from "react";
 import Style from "../css/loginComp.module.css";
+import { toast } from "react-toastify";
 
 const LoginComp = () => {
     let unameRef = useRef();
     let passRef = useRef();
 
-    let [userData, setUserData] = useState({
-        uname: "",
-        pass: "",
-    });
+    // let [userData, setUserData] = useState({
+    //     uname: "",
+    //     pass: "",
+    // });
     
     function handleSubmit(e) {
         e.preventDefault();
     
-        setUserData({
-            [unameRef.current.name]: unameRef.current.value,
-            [passRef.current.name]:passRef.current.value
-            }
-        )
+      //   setUserData({
+      //       [unameRef.current.name]: unameRef.current.value,
+      //       [passRef.current.name]:passRef.current.value
+      //       }
+      // )
+      
+
+      let username = unameRef.current.value
+      let password = passRef.current.value
+
+      let verifyData = JSON.parse(localStorage.getItem("user"));
+      console.log(verifyData)
+
+      if (verifyData.userName == username && verifyData.password == password) {
+        toast.success("Login sucessfully")
+      }
+      else {
+        toast.error("incorrect username or password")
+
+      }
+
+
     } 
-    console.log(userData);
+
    
   return (
     <>

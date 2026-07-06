@@ -1,13 +1,23 @@
 .sectionLogin{
     /* border: solid red; */
     background:linear-gradient(to top , rgb(255, 255, 255) 10%, rgb(0, 0, 0));
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     
 }
+
+.formBox{
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red; */
+}
+
 .headButton{
     margin-top: 10px;
     /* border: solid ; */
@@ -30,4 +40,7 @@ button:hover{
         background-color: rgb(0, 128, 255);
         color: navy;
 
+}
+table{
+    width:40%;
 }
